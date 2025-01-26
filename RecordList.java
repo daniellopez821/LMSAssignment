@@ -1,4 +1,6 @@
 public class RecordList {
+
+    /*Here is all the variables in the record list*/
     private String iD;
 
     private String name;
@@ -7,6 +9,9 @@ public class RecordList {
 
     private String overdueBalance;
 
+    /*Here I have a plain constructor and another one that will accept variable to add to record. I originally did
+    * not have the plain constructor but had to add it when I tried to implement the RecordList class into the main
+    * class. I ran into a problem where program required I have variables already ready to enter into constructor*/
     public RecordList() {};
 
     public RecordList(String ID, String name, String address, String overdueBalance){
@@ -16,6 +21,7 @@ public class RecordList {
         this.overdueBalance = overdueBalance;
     }
 
+    /*These are the getters and setters of each variable*/
     public String getOverdueBalance() {
         return overdueBalance;
     }
@@ -48,6 +54,7 @@ public class RecordList {
         this.iD = iD;
     }
 
+    /*Here is a string method created to print each element of the Array list into one line to keep it clean*/
     public String toString(){
         String result;
         result = iD + " " + name + " " + address + " " + overdueBalance;
